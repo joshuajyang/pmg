@@ -44,3 +44,21 @@ Your script would output
 |176146e4ae48e70df2e628b45dccfd53405c73f951c003fb8c9c09b3207e7aab|Wallets|accessories.csv|
 |63d42170fa2d706101ab713de2313ad3f9a05aa0b1c875a56545cfd69f7101fe|Purses|accessories.csv|
 
+
+## csv_combiner.py examples
+```
+$ python ./csv_combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv ./fixtures/household_cleaners.csv > combined.csv
+```
+this will create combined.csv containing the output
+
+```
+$ python ./csv_combiner.py ./fixtures/accessories.csv ./fixtures/clothing.csv ./fixtures/household_cleaners.csv
+```
+this will print the output to stdout
+
+
+## test_csv_combiner.py example
+```
+$ python -m unittest -v test_csv_combiner.py
+```
+this will run the unit tests
